@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iilinegor/art-bazar.git"
+    "url": "git+https://github.com/iilinegor/auto-repair-shop.git"
   },
   "author": "Ilin Egor",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/iilinegor/art-bazar/issues"
+    "url": "https://github.com/iilinegor/auto-repair-shop/issues"
   },
-  "homepage": "https://github.com/iilinegor/art-bazar#readme",
+  "homepage": "https://github.com/iilinegor/auto-repair-shop#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
     "classnames": "^2.2.5",
@@ -26,18 +26,13 @@
     "express": "^4.13.4",
     "flux": "^2.1.1",
     "fs": "0.0.1-security",
-    "jquery": "^2.2.4",
     "keymirror": "^0.1.1",
     "mongodb": "^2.1.18",
     "multer": "^1.2.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-dropzone-component": "^1.2.0",
-    "react-masonry-component": "^4.0.4",
-    "react-onclickoutside": "^5.7.0",
-    "react-predict": "0.0.3",
-    "react-router": "^2.4.1",
-    "stylus": "^0.54.5"
+    "react-router": "^2.4.1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -58,6 +53,7 @@
     "stylus-loader": "^2.1.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "stylus": "^0.54.5"
   }
 }
