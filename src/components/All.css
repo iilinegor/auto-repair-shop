@@ -1,0 +1,43 @@
+.asd {
+	padding-top: 80px;
+}
+
+.checkbox {
+	background-color: #dfdfdf;
+	display: inline-block;
+	margin: 10px;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #484848;
+	vertical-align: middle;
+}
+
+.checkbox  input {
+	vertical-align: -2px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+#in {
+	width: 400px;
+	border: 1px solid rgba(150, 150, 150, 0.5);
+	margin: auto;
+	padding: 5px;
+	margin-top: 30px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px rgba(150, 150, 150, 0.5);
+	font-family: arial;
+	text-align: center;
+}
+
+.test {
+	color: red;
+}

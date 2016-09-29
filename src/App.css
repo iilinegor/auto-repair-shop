@@ -1,0 +1,152 @@
+body, html {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-family: "Arial";
+	background-color: #edefed;
+}
+
+#content {
+	margin: 0px;
+}
+
+.content {
+	margin: 0px 0px;
+}
+
+
+.top {
+	position: fixed;
+	width: 98vw;
+	height: 60px;
+	margin-left: 0.5vw;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.top .logo {
+	border-right: 2px solid #dfdfdf;
+	width: 70px;
+	height: 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.top .logo:hover {
+	border-right: 2px solid #dfdfdf;
+	background-color: #f5f5f5;
+	width: 70px;
+	height: 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.top .top_item {
+	max-height: 60px;
+	border-right: 2px solid #dfdfdf;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	float: right;
+	cursor: pointer;
+}
+
+.top .top_item:hover {
+	background-color: #f5f5f5;
+}
+
+.top button {
+	padding: 10px;
+	background-color: #FFFFFF;
+	border: 3px solid #dfdfdf;
+	margin-top: -12px;
+}
+
+#logo_top {
+	width: 50px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#search_icon {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAMFBMVEUAAAC0tLTK0MrLz8vNz8zNz8zNzsq%2Fv7%2FMzMzMz8zNz8vNz8zN0MzN0MvNz8vN0MyQKnTvAAAAD3RSTlMABiuR995DDDeau1%2FFt30aLLziAAAAiklEQVR42oXQWRICMQgEUAIhy2Tp%2B9%2FWUUfJlFjpL4qXFXqGRQEVpnuC4IqEW78DteRcKtBXEcT0rlKEWJ%2BBs38JwMuGaqvqskVRDAr0WwPZIAMbcI7aXO491%2F%2BgjuaN5JURfoeoGC3i%2BIiNfaARm1gaIvsy%2Fkk4tjLJlQQlT9JEJ0%2FONHJkam%2F0AFOsB9amcYuwAAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	margin: 15px;
+}
+
+.search_field {
+	border: 0px solid #dfdfdf;
+	display: inline-block;
+	width: calc(100% - 650px);
+	margin: 20px;
+	margin-left: -10px;
+	vertical-align: top;
+	font-size: 14px;
+	color: #484848;
+}
+
+input:focus, input:active, button:focus, button:active {
+	outline: none;
+}
+
+
+
+.Additional {
+	position: fixed;
+	background-color: #FFFFFF;
+	border: 1px solid #dfdfdf;
+	padding: 20px;
+	top: 80px;
+	left: calc(0.5vw - 1000px);
+}
+
+.Additional_active {
+	position: fixed;
+	background-color: #FFFFFF;
+	border: 1px solid #dfdfdf;
+	padding: 20px;
+	top: 80px;
+	left: calc(0.5vw - 1000px);
+	transform: translate(1000px);
+	transition: 0.3s;
+}
+
+
+
+.host_img {
+	margin: 200px calc(50% - 279px);
+}
+
+
+.Additional_active input {
+
+}
+
+
+.dz-preview {
+	display: none;
+	visibility: hidden;
+}
+
+.dz-default {
+	border: dashed 2px #000000;
+	border-radius: 5px;
+	width: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	transition: all 0.5s;
+	margin: 5px auto;
+	text-align: center;
+}
+
+.dz-default:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: all 0.2s;
+
+}
