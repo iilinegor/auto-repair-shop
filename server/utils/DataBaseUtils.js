@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 import config from '../../etc/config.json';
 
 import '../models/Market';
-import '../models/User';
+import '../models/Users';
 
 
 const Market = mongoose.model('market');
-const User = mongoose.model('user');
+const User = mongoose.model('users');
 
 export function setUpConnection() {
     mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);    

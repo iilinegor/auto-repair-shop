@@ -22,7 +22,7 @@ var userSchema = new Schema({
 				registerAt: String
 			});
 
-mongoose.model('user', userSchema, 'user');
+mongoose.model('users', userSchema, 'users');
 
 
 // var userSchema = new Schema({

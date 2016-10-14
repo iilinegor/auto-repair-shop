@@ -15,14 +15,15 @@ function getStateFromFlux() {
 		};
 };
 
-	var All = React.createClass({
+	var Profile = React.createClass({
 		contextTypes: {
 	        router: React.PropTypes.object.isRequired
 	    },
 
 	    getInitialState() {
 	    	return {
-	    		products: store.getProducts()
+	    		products: store.getProducts(),
+	    		users: store.getUsers()
 	    	};
 	    },
 
@@ -47,7 +48,11 @@ function getStateFromFlux() {
 					prod.push(<Offer_item product={{p}}/>);
 
 			return 	<div className="asd">
-						{prod}
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						{this.state.users}
 					</div>
 			
 		},
@@ -60,4 +65,4 @@ function getStateFromFlux() {
 
 	
 
-export default All;
+export default Profile;

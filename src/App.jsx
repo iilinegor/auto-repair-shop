@@ -66,7 +66,6 @@ var componentConfig = {
 					if (photo !== "")
 						tmp.push(photo);
 				scope.setState({ photos : tmp });
-				// inputs.push(<input type="text" id={`photo-${i}`} onChange={this.handlePushPhoto.bind(null, i)} value={tmpPhotos[i]}/>);
 			};
 
 		console.log(res.responseText);
@@ -96,7 +95,7 @@ var App = React.createClass({
 	    },
 
 	    handleProfile() { 
-	    	this.context.router.push(`/all`);
+	    	this.context.router.push(`/profile`);
 	    },
 
 	    handleAdd() { 
@@ -127,10 +126,10 @@ var App = React.createClass({
 								<div id="search_icon"></div>
 								<input type="text" placeholder="Что вы хотите найти?" className="search_field" onChange={this.handleSerachChange}/>
 								
-								<div className="top_item" onClick={this.handleAdd}>
+								<div className="top_item" onClick={this.handleProfile}>
 									Профиль
 								</div>
-								<div className="top_item" onClick={this.handleProfile}>
+								<div className="top_item" onClick={this.handleAdd}>
 									Помощь
 								</div>
 								<div className="top_item" onClick={this.handleProfile}>

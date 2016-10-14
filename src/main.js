@@ -5,6 +5,7 @@ import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
 import All from './components/All.jsx';
 import Main from './components/Main.jsx';
 import Host from './components/Host.jsx';
+import Profile from './components/Profile.jsx';
 import Add_start from './components/Add_start.jsx';
 import App from './App.jsx';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
 					<Route path="/main" component={Main}/>
 					<Route path="/add" component={Add_start}/>
 					<Route path="/host" component={Host}/>
+					<Route path="/profile" component={Profile}/>
 				</Route>
 			</Router>,
 			document.getElementById("content")
