@@ -7,11 +7,11 @@ import actions from '../actions/actions';
 import store from '../stores/store';
 
 import Offer_item from'./micro/Offer_item.jsx'
-import './All.css';
 
 function getStateFromFlux() {
     return {
-			products: store.getProducts()
+			products: store.getProducts(),
+			users: store.getUsers()
 		};
 };
 
@@ -22,8 +22,8 @@ function getStateFromFlux() {
 
 	    getInitialState() {
 	    	return {
-	    		products: store.getProducts(),
-	    		users: store.getUsers()
+				products: store.getProducts(),
+				users: store.getUsers()
 	    	};
 	    },
 
@@ -42,18 +42,22 @@ function getStateFromFlux() {
 
 
 		render() {	
-			let { products } = this.state,
-				prod = [];
-				for (let p of products)
-					prod.push(<Offer_item product={{p}}/>);
+			let { products, users } = this.state;
+			let prod = [];
 
+			for (let p of products)
+				prod.push(<Offer_item product={{p}}/>);
+			console.log(this.state.users);
+			if (this.state.users[0])
 			return 	<div className="asd">
 						<br/>
 						<br/>
 						<br/>
 						<br/>
-						{this.state.users}
+						{this.state.users[0].name}
 					</div>
+			else
+				return 0;
 			
 		},
 
