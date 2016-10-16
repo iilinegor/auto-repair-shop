@@ -6,7 +6,8 @@ import store from '../stores/store';
 
 function getStateFromFlux() {
     return {
-			products: store.getProducts()
+			products: store.getProducts(),
+	    		users: store.getUsers()
 		};
 };
 
@@ -17,7 +18,8 @@ function getStateFromFlux() {
 
 	    getInitialState() {
 	    	return {
-	    		products: store.getProducts()
+	    		products: store.getProducts(),
+	    		users: store.getUsers()
 	    	};
 	    },
 
@@ -45,7 +47,11 @@ function getStateFromFlux() {
 	    },
 
 	    handleSubmit(){
-	    	alert(`Типа ${this.state.name} ${this.state.password}`);
+	    	let { users } = this.state;
+	    	for (let u of users) {
+	    		if (u.name === this.state.name )
+	    			alert("Есть такой!");
+	    	}
 	    },
 
 		render() {	
