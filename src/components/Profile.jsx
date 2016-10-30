@@ -1,8 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import Masonry from 'react-masonry-component';
-
 import actions from '../actions/actions';
 import store from '../stores/store';
 
@@ -43,21 +41,35 @@ function getStateFromFlux() {
 
 		render() {	
 			let { products, users } = this.state;
+			let { id } =this.props.params;
 			let prod = [];
 
 			for (let p of products)
 				prod.push(<Offer_item product={{p}}/>);
-			console.log(this.state.users);
-			if (this.state.users[0])
-			return 	<div className="asd">
+			console.log(users);
+			console.log(this.props.params.id);
+			if (users.length > 0)
+				return <div>
 						<br/>
 						<br/>
 						<br/>
 						<br/>
-						{this.state.users[0].name}
-					</div>
-			else
-				return 0;
+						<h1>	asdasd</h1>
+						<h1>	asdasd</h1>
+						<h1>	asdasd</h1>
+						<h1>	{users[id].name}</h1>
+
+				</div>
+			else 
+				return <div>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<h1>	asdasd</h1>
+						<h1>	asdasd</h1>
+						<h1>	asdasd</h1>
+				</div>
 			
 		},
 

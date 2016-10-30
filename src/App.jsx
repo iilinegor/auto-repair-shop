@@ -95,7 +95,11 @@ var App = React.createClass({
 	    },
 
 	    handleProfile() { 
-	    	this.context.router.push(`/profile`);
+	    	this.context.router.push(`/profile/0`);
+	    },
+
+	    handleMail() { 
+	    	this.context.router.push(`/all`);
 	    },
 
 	    handleAdd() { 
@@ -132,7 +136,7 @@ var App = React.createClass({
 								<div className="top_item" onClick={this.handleAdd}>
 									Помощь
 								</div>
-								<div className="top_item" onClick={this.handleProfile}>
+								<div className="top_item" onClick={this.handleMail}>
 									Сообщения
 								</div>
 								<div className="top_item" onClick={this.handleHost}>
