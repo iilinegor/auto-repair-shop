@@ -117,10 +117,24 @@ var App = React.createClass({
 		    	local = parseInt(localStorage.getItem('userId'));
 		    };
 
-		     if (local === -1 || local != 0)
-			    			this.context.router.push(`/all`)
+		     // if (local === -1 || local != 0)
+			    // 			this.context.router.push(`/all`)
 			  console.log(local);
 	    	return inLocalStorage();
+	    },
+
+
+	    shouldComponentUpdate(nextProps, nextState) {
+	    	let local = localStorage.getItem('userId');
+		    	console.log(this.state.userId);
+		    	console.log(local);
+
+		    if (local !== this.state.userId ) {
+		    	console.log("fuuuuuuuuuuuuuuck");
+		    	// this.setState(inLocalStorage());
+		    	// this.forceUpdate();
+		    };
+		    return ( local !== this.state.userId );
 	    },
 
 	    handleLogoClick: function(){
@@ -128,7 +142,7 @@ var App = React.createClass({
 	    },
 
 	    handleProfile() { 
-	    	this.context.router.push(`/profile/0`);
+	    	this.context.router.push(`/profile/1`);
 	    },
 
 	    handleLogin() { 

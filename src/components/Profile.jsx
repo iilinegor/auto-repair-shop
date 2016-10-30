@@ -38,6 +38,15 @@ function getStateFromFlux() {
 			store.removeChangeListener(this._onChange);
 	    },
 
+	    handleLogOut() {
+	    	localStorage.setItem("userId", "-1");
+	    	this.context.router.push(`/all`);
+	    	// this.forceUpdate();
+	    	// this.context.router.refresh();
+	    	window.location.reload() ;
+	    },
+
+
 
 		render() {	
 			let { products, users } = this.state;
@@ -54,10 +63,13 @@ function getStateFromFlux() {
 						<br/>
 						<br/>
 						<br/>
-						<h1>	asdasd</h1>
-						<h1>	asdasd</h1>
-						<h1>	asdasd</h1>
+						<img src={users[id].photo} alt=""/>
 						<h1>	{users[id].name}</h1>
+						<h1>	{users[id].lastName}</h1>
+						<h1>	{users[id].email}</h1>
+						<h1>	{users[id].location}</h1>
+						<h1>	{users[id].registerAt}</h1>
+						<button onClick={this.handleLogOut}>Выйти</button>
 
 				</div>
 			else 

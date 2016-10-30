@@ -1,13 +1,12 @@
 
 .auth_container {
-	height: 2000px;
 	width: 100%;
 }
 
 .auth {
 	position: absolute;
-	left: calc(50% - 150px);
-	top: 15vh;
+	left: calc(50vw - 150px);
+	top: 42vh;
 	width: 300px;
 	background-color: #343454;
 	color: #fff;
