@@ -16,7 +16,7 @@ var Offer_item = React.createClass({
 		render() {
 			let p = this.props.product.p;
 			return <div key={p._id} className="offer_item">
-									<div className="offer_photo" style={{"background-image" : `url(${p.image})`}}> </div>
+									<div className="offer_photo" style={{"backgroundImage" : `url(${p.image})`}}> </div>
 									<p>name: {p.name}</p>
 									<p>mark: {p.mark}</p>
 									<p>model: {p.model}</p>
