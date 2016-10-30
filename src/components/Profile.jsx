@@ -40,7 +40,7 @@ function getStateFromFlux() {
 
 	    handleLogOut() {
 	    	localStorage.setItem("userId", "-1");
-	    	this.context.router.push(`/all`);
+	    	this.context.router.push(`/main`);
 	    	// this.forceUpdate();
 	    	// this.context.router.refresh();
 	    	window.location.reload() ;

@@ -21,7 +21,7 @@ body, html {
 	height: 60px;
 	margin-left: 0.5vw;
 	margin-top: 10px;
-	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.6);
 	display: inline-block;
 	overflow: hidden;
 }
@@ -52,6 +52,7 @@ body, html {
 	padding: 20px;
 	float: right;
 	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .top .top_item:hover {
@@ -78,6 +79,7 @@ body, html {
 	height: 28px;
 	display: inline-block;
 	margin: 15px;
+	filter: brightness(200%);
 }
 
 .search_field {
@@ -87,8 +89,9 @@ body, html {
 	margin: 20px;
 	margin-left: -10px;
 	vertical-align: top;
-	font-size: 14px;
+	font-size: 18px;
 	color: #484848;
+	background-color: rgba(255, 255, 255, 0.0);
 }
 
 input:focus, input:active, button:focus, button:active {
@@ -149,4 +152,24 @@ input:focus, input:active, button:focus, button:active {
 	background-color: rgba(255, 255, 255, 0.2);
 	transition: all 0.2s;
 
+}
+
+
+
+
+
+
+
+
+
+
+.tile {
+
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear; 
+	-webkit-transform-origin: center 50% 0px; 
+	    -ms-transform-origin: center 50% 0px; 
+	        transform-origin: center 50% 0px;
 }

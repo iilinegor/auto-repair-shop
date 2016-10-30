@@ -4,8 +4,6 @@ import React from 'react';
 import DropzoneComponent from 'react-dropzone-component/lib/react-dropzone'
 import { apiPrefix } from '../etc/config.json';
 
-
-
 import actions from './actions/actions';
 import store from './stores/store';
 
@@ -178,7 +176,7 @@ var App = React.createClass({
 						<div className='header'> </div>
 								<Additional name={this.state.search}/>
 
-						<div className="top">
+						<div className="top" id="tile">
 								<div className="logo">
 									<img src="https://habrastorage.org/files/5d1/11a/0a3/5d111a0a3f9b4d91b5d3eddf845b3744.png" alt="" id="logo_top"  onClick={this.handleLogoClick}/>
 								</div>
@@ -210,7 +208,7 @@ var App = React.createClass({
 						<div className='header'> </div>
 								<Additional name={this.state.search}/>
 
-						<div className="top">
+						<div className="top" id="tile">
 								<div className="logo">
 									<img src="https://habrastorage.org/files/5d1/11a/0a3/5d111a0a3f9b4d91b5d3eddf845b3744.png" alt="" id="logo_top"  onClick={this.handleLogoClick}/>
 								</div>
@@ -422,3 +420,4 @@ var Additional = React.createClass({
 
 
 export default App;
+
