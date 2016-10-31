@@ -127,10 +127,37 @@ input:focus, input:active, button:focus, button:active {
 }
 
 
-.Additional_active input {
-
+.Additional_active input[type="text"] {
+	margin: 10px;
+	padding: 10px;
 }
 
+.Additional_active #comment {
+	width: 92%;
+}
+
+.Additional_active button {
+	border: 1px solid #777;
+	background-color: #eee;
+	margin: 10px;
+	padding: 10px;
+	transition: background 0.3s;
+}
+
+.Additional_active button:hover {
+	background-color: #fff;
+	transition: background 0.3s;
+}
+
+.Additional_active .close {
+	position: relative;
+	color: #777;
+	right: -100%;
+	top: 0px;
+	margin: -10px;
+	font-size: 24px;
+	cursor: pointer;
+}
 
 .dz-preview {
 	display: none;

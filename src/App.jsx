@@ -122,19 +122,6 @@ var App = React.createClass({
 	    },
 
 
-	    shouldComponentUpdate(nextProps, nextState) {
-	    	let local = localStorage.getItem('userId');
-		    	console.log(this.state.userId);
-		    	console.log(local);
-
-		    if (local !== this.state.userId ) {
-		    	console.log("fuuuuuuuuuuuuuuck");
-		    	// this.setState(inLocalStorage());
-		    	// this.forceUpdate();
-		    };
-		    return ( local !== this.state.userId );
-	    },
-
 	    handleLogoClick: function(){
 	    	this.context.router.push(`/main`);
 	    },
@@ -353,19 +340,24 @@ var Additional = React.createClass({
 		console.log(event);
 	},
 
+	handleClose() {
+		additional_close();
+	},
+
 	render() {
 		let detail = [];
 		if (this.state.addMode){
 			detail.push(<DropzoneComponent config={componentConfig}
 		                       eventHandlers={eventHandlers}
 		                       djsConfig={djsConfig} />);
-			detail.push(<input type="text" onChange={this.handleName} placeholder="Коментарий"/>);
-			detail.push(<input type="text" onChange={this.handleName} placeholder="Цвет"/>);
+			detail.push(<input type="text" id="comment" onChange={this.handleName} placeholder="Коментарий"/>);
+			// detail.push(<input type="text" onChange={this.handleName} placeholder="Цвет"/>);
 			detail.push(<br/>);
 
 
 		};
 		return <div className="Additional">
+						<div className="close" onClick={this.handleClose}>⨉</div>
 						<div className="checkbox">
 							<label htmlFor="type_new">Новые</label>
 							<input type="checkbox" id="type_new"/>						
@@ -401,14 +393,12 @@ var Additional = React.createClass({
 							<input type="text" onChange={this.handleYear} placeholder="Год выпуска автомобиля"/>
 						
 						
-						<br1/>
-						<br/>
 						<input1 type="text" onChange={this.handleColor} placeholder="Цвет"/>
 						<br/>
 						{detail}
 						<br/>
 						<button onClick={this.handleSubmit}>Разместить</button>	
-						<button onClick={this.handleOffer}>Пердложить</button>	
+						<button onClick={this.handleOffer}>Найти</button>	
 		</div>
 	},
 
