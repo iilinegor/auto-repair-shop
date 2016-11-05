@@ -41,6 +41,7 @@ body, html {
 	height: 60px;
 	display: inline-block;
 	vertical-align: top;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -92,6 +93,11 @@ body, html {
 	font-size: 18px;
 	color: #484848;
 	background-color: rgba(255, 255, 255, 0.0);
+}
+
+.search_field::-webkit-input-placeholder{
+	text-overflow:ellipsis;
+	color: #ffffff;
 }
 
 input:focus, input:active, button:focus, button:active {
