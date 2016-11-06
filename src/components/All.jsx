@@ -44,7 +44,7 @@ function getStateFromFlux() {
 			let { products } = this.state,
 				prod = [];
 				for (let p of products)
-					prod.push(<Offer_item product={{p}}/>);
+					prod.push(<Offer_item key={p.id} product={{p}}/>);
 
 			return 	<div className="asd">
 						{prod}
