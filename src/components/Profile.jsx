@@ -6,6 +6,8 @@ import store from '../stores/store';
 
 import Offer_item from'./micro/Offer_item.jsx'
 
+import "./Profile.css"
+
 function getStateFromFlux() {
     return {
 			products: store.getProducts(),
@@ -51,26 +53,42 @@ function getStateFromFlux() {
 		render() {	
 			let { products, users } = this.state;
 			let { id } =this.props.params;
-			let prod = [];
-
-			for (let p of products)
-				prod.push(<Offer_item product={{p}}/>);
-			console.log(users);
-			console.log(this.props.params.id);
 			if (users.length > 0)
 				return <div>
 						<br/>
 						<br/>
 						<br/>
 						<br/>
-						<img src={users[id].photo} alt=""/>
-						<h1>	{users[id].name}</h1>
-						<h1>	{users[id].lastName}</h1>
-						<h1>	{users[id].email}</h1>
-						<h1>	{users[id].location}</h1>
-						<h1>	{users[id].registerAt}</h1>
-						<button onClick={this.handleLogOut}>Выйти</button>
+						<div className="profile_full">
+							<div className="pic" style={{backgroundImage: "url(" + users[id].photo + ")"}}></div>
+							<img1 src={users[id].photo} alt=""/>
+							<div className="info">	
+								<div className="field">	
+									<b>Имя</b>
+									{users[id].name}
+								</div>
 
+								<div className="field">	
+									<b>Email</b>
+									{users[id].email}
+								</div>
+
+								<div className="field">	
+									<b>Город</b>
+									{users[id].location}
+								</div>
+
+								<div className="field">	
+									<b>С нами с</b>
+									{users[id].registerAt.substr(4, 12)}
+								</div>
+								
+
+							</div>
+
+						</div>
+								<button onClick={this.handleLogOut}>Выйти</button>
+						
 				</div>
 			else 
 				return <div>

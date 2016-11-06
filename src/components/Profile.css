@@ -1,0 +1,36 @@
+.profile_full {
+	position: absolute;
+	left: calc(50vw - 190px);
+	top: 20vh;
+	width: 370px;
+	padding: 30px 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile_full .pic {
+	width: 120px;
+	height: 120px;
+	background-size: auto 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: -10px;
+}
+
+.profile_full .info {
+	display: inline-block;
+	margin: 10px 0px;
+	margin-left: 20px;
+}
+
+.profile_full .field {
+	text-align: right;
+	width: 220px;
+	margin: 10px 0px;
+}
+
+.profile_full .field b {
+	float: left;
+}
