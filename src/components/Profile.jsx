@@ -42,7 +42,7 @@ function getStateFromFlux() {
 
 	    handleLogOut() {
 	    	localStorage.setItem("userId", "-1");
-	    	this.context.router.push(`/main`);
+	    	this.context.router.push(`/`);
 	    	// this.forceUpdate();
 	    	// this.context.router.refresh();
 	    	window.location.reload() ;
@@ -88,7 +88,7 @@ function getStateFromFlux() {
 
 						</div>
 								<button onClick={this.handleLogOut}>Выйти</button>
-						
+
 				</div>
 			else 
 				return <div>

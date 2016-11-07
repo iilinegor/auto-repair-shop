@@ -39,7 +39,7 @@ var Login = React.createClass({
 	    	var { user } = this.state;
 	    	if ( currentPass === user.password ){
 	    		localStorage.setItem('userId', this.state.user.id);
-	    		this.context.router.push(`/main`);
+	    		this.context.router.push(`/`);
 	    		window.location.reload() ;
 	    	};
 	    },
