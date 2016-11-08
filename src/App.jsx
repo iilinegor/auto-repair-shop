@@ -92,7 +92,7 @@ var App = React.createClass({
 	    },
 
 	    handleAdd() { 
-	    	this.context.router.push(`/add`);
+	    	this.context.router.push(`/help`);
 	    },
 
 	    handleHost() {

@@ -1,0 +1,16 @@
+.help {
+	max-width: 600px;
+	margin: 0px auto;
+	padding-top: 100px;
+}
+
+.help h1 {
+	text-align: center;
+	margin: 50px;
+}
+
+.help p {
+	line-height: 180%;
+
+}
+
